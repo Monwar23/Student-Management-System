@@ -7,6 +7,9 @@ import {
 } from "react-router-dom";
 import Root from './Layout/Root';
 import Home from './Pages/Home';
+import StudentDashboard from './Pages/StudentDashboard';
+import FacultyManagement from './Pages/FacultyManagement';
+import CourseRegistration from './Pages/CourseRegistration';
 
 const router = createBrowserRouter([
   {
@@ -16,7 +19,20 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>
-      }
+      },
+      {
+        path: '/student',
+        element: <StudentDashboard></StudentDashboard>
+      },
+      {
+        path: '/faculty',
+        element: <FacultyManagement></FacultyManagement>
+      },
+      {
+        path: '/enroll',
+        element: <CourseRegistration></CourseRegistration>
+      },
+
     ]
   },
 ]);
