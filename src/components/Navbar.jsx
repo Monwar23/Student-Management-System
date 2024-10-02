@@ -53,7 +53,7 @@ const Navbar = () => {
 
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-black rounded-box w-52 right-0"
+                        className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-black rounded-box w-44 right-0"
                     >
                         {navLinks}
                         <Link to='/enroll' className="block lg:hidden rounded-md px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-[#07B0CE] text-white">
