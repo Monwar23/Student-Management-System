@@ -32,12 +32,12 @@ const StudentDashboard = () => {
             onMouseLeave={() => setHoveredCourse(null)}
           >
             <h2 className="text-2xl font-semibold text-[#07B0CE]">{course.name}</h2>
-            <p className="text-white mt-2">Grade: <span className="font-bold">{course.grade}</span></p>
-            <p className="text-white">Professor: {course.professor}</p>
+            <p className="text-white mt-2">Grade : <span className="font-bold">{course.grade}</span></p>
+            <p className="text-white">Professor : {course.professor}</p>
 
             {hoveredCourse === index && (
               <div className="absolute top-0 right-0 p-4 border-2 border-[#07B0CE] rounded-lg shadow-lg z-10">
-                <p className="text-white">Contact: <a href={`mailto:${course.contact}`} className="text-white">{course.contact}</a></p>
+                <p className="text-white">Contact : <a href={`mailto:${course.contact}`} className="text-white">{course.contact}</a></p>
               </div>
             )}
           </div>
