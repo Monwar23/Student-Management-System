@@ -1,10 +1,99 @@
 [
-    { "name": "Web Development", "grade": "A", "professor": "John Doe", "contact": "john@example.com" },
-    { "name": "Data Structures", "grade": "B+", "professor": "Jane Smith", "contact": "jane@example.com" },
-    { "name": "Algorithms", "grade": "A-", "professor": "Emily Davis", "contact": "emily@example.com" },
-    { "name": "Database Systems", "grade": "B", "professor": "Michael Brown", "contact": "michael@example.com" },
-    { "name": "Operating Systems", "grade": "A", "professor": "Anna Taylor", "contact": "anna@example.com" },
-    { "name": "Computer Networks", "grade": "B+", "professor": "Chris Green", "contact": "chris@example.com" },
-    { "name": "Software Engineering", "grade": "A-", "professor": "David White", "contact": "david@example.com" },
-    { "name": "Artificial Intelligence", "grade": "A", "professor": "Sarah Johnson", "contact": "sarah@example.com" }
-]
+    {
+      "name": "Web Development",
+      "grade": "A",
+      "professor": "John Doe",
+      "contact": "john@example.com",
+      "description": "Learn the fundamentals of web development, including HTML, CSS, JavaScript, and responsive design.",
+      "syllabus": "Week 1: HTML & CSS, Week 2: JavaScript Basics, Week 3: Responsive Design, Week 4: React",
+      "prerequisites": "Basic computer knowledge",
+      "credits": 4,
+      "schedule": "Monday & Wednesday, 10:00 AM - 12:00 PM",
+      "enrollmentDetails": "Enrollment open till Jan 15, 2025"
+    },
+    {
+      "name": "Data Structures",
+      "grade": "B+",
+      "professor": "Jane Smith",
+      "contact": "jane@example.com",
+      "description": "Introduction to data structures such as arrays, linked lists, stacks, queues, trees, and graphs.",
+      "syllabus": "Week 1: Arrays & Linked Lists, Week 2: Stacks & Queues, Week 3: Trees, Week 4: Graphs",
+      "prerequisites": "Basic programming knowledge in any language",
+      "credits": 3,
+      "schedule": "Tuesday & Thursday, 2:00 PM - 4:00 PM",
+      "enrollmentDetails": "Enrollment open till Jan 12, 2025"
+    },
+    {
+      "name": "Algorithms",
+      "grade": "A-",
+      "professor": "Emily Davis",
+      "contact": "emily@example.com",
+      "description": "Study of algorithm design techniques such as divide and conquer, dynamic programming, and greedy algorithms.",
+      "syllabus": "Week 1: Sorting & Searching, Week 2: Divide & Conquer, Week 3: Dynamic Programming, Week 4: Greedy Algorithms",
+      "prerequisites": "Data Structures",
+      "credits": 4,
+      "schedule": "Monday & Wednesday, 1:00 PM - 3:00 PM",
+      "enrollmentDetails": "Enrollment open till Jan 10, 2025"
+    },
+    {
+      "name": "Database Systems",
+      "grade": "B",
+      "professor": "Michael Brown",
+      "contact": "michael@example.com",
+      "description": "Comprehensive study of database systems including SQL, database design, and transaction management.",
+      "syllabus": "Week 1: Introduction to Databases, Week 2: SQL Queries, Week 3: Database Design, Week 4: Transactions",
+      "prerequisites": "Basic programming knowledge",
+      "credits": 3,
+      "schedule": "Tuesday & Thursday, 11:00 AM - 1:00 PM",
+      "enrollmentDetails": "Enrollment open till Jan 14, 2025"
+    },
+    {
+      "name": "Operating Systems",
+      "grade": "A",
+      "professor": "Anna Taylor",
+      "contact": "anna@example.com",
+      "description": "Learn the fundamentals of operating systems, including process management, memory management, and file systems.",
+      "syllabus": "Week 1: Introduction to Operating Systems, Week 2: Process Management, Week 3: Memory Management, Week 4: File Systems",
+      "prerequisites": "Basic knowledge of computer systems",
+      "credits": 4,
+      "schedule": "Wednesday & Friday, 9:00 AM - 11:00 AM",
+      "enrollmentDetails": "Enrollment open till Jan 16, 2025"
+    },
+    {
+      "name": "Computer Networks",
+      "grade": "B+",
+      "professor": "Chris Green",
+      "contact": "chris@example.com",
+      "description": "Introduction to networking concepts, including OSI model, TCP/IP, and network protocols.",
+      "syllabus": "Week 1: OSI Model, Week 2: TCP/IP, Week 3: Routing Protocols, Week 4: Network Security",
+      "prerequisites": "Basic knowledge of computer systems",
+      "credits": 3,
+      "schedule": "Monday & Wednesday, 3:00 PM - 5:00 PM",
+      "enrollmentDetails": "Enrollment open till Jan 17, 2025"
+    },
+    {
+      "name": "Software Engineering",
+      "grade": "A-",
+      "professor": "David White",
+      "contact": "david@example.com",
+      "description": "Study of software development life cycle, methodologies, and project management in software engineering.",
+      "syllabus": "Week 1: Software Development Life Cycle, Week 2: Agile Methodologies, Week 3: Project Management, Week 4: Software Testing",
+      "prerequisites": "Basic programming knowledge",
+      "credits": 4,
+      "schedule": "Tuesday & Thursday, 9:00 AM - 11:00 AM",
+      "enrollmentDetails": "Enrollment open till Jan 11, 2025"
+    },
+    {
+      "name": "Artificial Intelligence",
+      "grade": "A",
+      "professor": "Sarah Johnson",
+      "contact": "sarah@example.com",
+      "description": "Introduction to artificial intelligence concepts, including machine learning, neural networks, and natural language processing.",
+      "syllabus": "Week 1: Introduction to AI, Week 2: Machine Learning, Week 3: Neural Networks, Week 4: Natural Language Processing",
+      "prerequisites": "Basic programming knowledge",
+      "credits": 4,
+      "schedule": "Friday, 10:00 AM - 1:00 PM",
+      "enrollmentDetails": "Enrollment open till Jan 20, 2025"
+    }
+  ]
+  

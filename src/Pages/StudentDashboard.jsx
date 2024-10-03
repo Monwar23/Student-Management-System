@@ -2,10 +2,10 @@ import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 
 const StudentDashboard = () => {
-
-const courses=useLoaderData()
-
+  const courses = useLoaderData();
+  console.log(courses);
   const [hoveredCourse, setHoveredCourse] = useState(null);
+  const [selectedCourse, setSelectedCourse] = useState(null);
 
   return (
     <div className="p-8  min-h-screen">
@@ -19,9 +19,10 @@ const courses=useLoaderData()
         {courses.map((course, index) => (
           <div
             key={index}
-            className=" p-6 shadow-lg rounded-lg hover:shadow-xl transition relative border border-[#07B0CE]"
+            className="p-6 shadow-lg rounded-lg hover:shadow-xl transition relative border border-[#07B0CE] cursor-pointer"
             onMouseEnter={() => setHoveredCourse(index)}
             onMouseLeave={() => setHoveredCourse(null)}
+            onClick={() => setSelectedCourse(course)}
           >
             <h2 className="text-2xl font-semibold text-[#07B0CE]">{course.name}</h2>
             <p className="text-white mt-2">Grade : <span className="font-bold">{course.grade}</span></p>
@@ -35,6 +36,47 @@ const courses=useLoaderData()
           </div>
         ))}
       </div>
+
+
+{selectedCourse && (
+  <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center">
+  <div className="p-8 rounded-lg text-white shadow-2xl max-w-lg border-4 border-[#07B0CE] bg-gray-800">
+    <h2 className="text-4xl font-bold mb-6 text-[#07B0CE]">{selectedCourse.name}</h2>
+    
+    <div className="space-y-4">
+      <p>
+        <strong className="text-[#07B0CE]">Course Description:</strong> {selectedCourse.description}
+      </p>
+      <p>
+        <strong className="text-[#07B0CE]">Course Syllabus:</strong> {selectedCourse.syllabus}
+      </p>
+      <p>
+        <strong className="text-[#07B0CE]">Prerequisites:</strong> {selectedCourse.prerequisites}
+      </p>
+      <p>
+        <strong className="text-[#07B0CE]">Credits:</strong> {selectedCourse.credits}
+      </p>
+      <p>
+        <strong className="text-[#07B0CE]">Professor:</strong> {selectedCourse.professor}
+      </p>
+      <p>
+        <strong className="text-[#07B0CE]">Schedule:</strong> {selectedCourse.schedule}
+      </p>
+      <p>
+        <strong className="text-[#07B0CE]">Enrollment:</strong> {selectedCourse.enrollmentDetails}
+      </p>
+    </div>
+
+    <button
+      className="mt-6 border-2 border-[#07B0CE] text-[#07B0CE] px-6 py-3 rounded-lg hover:bg-[#07B0CE] hover:text-white transition duration-300"
+      onClick={() => setSelectedCourse(null)}
+    >
+      Close
+    </button>
+  </div>
+</div>
+
+)}
 
       <div className="mt-10">
         <h3 className="text-2xl font-semibold mb-4 text-[#07B0CE]">Upcoming Events</h3>
