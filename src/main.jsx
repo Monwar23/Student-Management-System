@@ -32,7 +32,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/enroll',
-        element: <CourseRegistration></CourseRegistration>
+        element: <CourseRegistration></CourseRegistration>,
+        loader:()=>fetch('/courses.json')
       },
 
     ]

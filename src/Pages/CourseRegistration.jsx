@@ -1,4 +1,5 @@
 import  { useState } from 'react';
+import { useLoaderData } from 'react-router-dom';
 
 const CourseRegistration = () => {
     const [formData, setFormData] = useState({
@@ -8,8 +9,7 @@ const CourseRegistration = () => {
     });
     const [submitted, setSubmitted] = useState(false);
     const [errors, setErrors] = useState({});
-
-    const courses = ['Mathematics', 'Computer Science', 'Physics', 'English', 'Artificial Intelligence'];
+    const courses=useLoaderData()
 
     const handleChange = (e) => {
         setFormData({
@@ -85,8 +85,8 @@ const CourseRegistration = () => {
                             >
                                 <option value="" className="text-gray-500">Select a course</option>
                                 {courses.map((course) => (
-                                    <option key={course} value={course} className="text-[#286570]">
-                                        {course}
+                                    <option key={course} value={course.name} className="text-[#286570]">
+                                        {course.name}
                                     </option>
                                 ))}
                             </select>
