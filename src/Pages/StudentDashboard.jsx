@@ -1,17 +1,9 @@
 import { useState } from "react";
+import { useLoaderData } from "react-router-dom";
 
 const StudentDashboard = () => {
-  const courses = [
-    { name: "Web Development", grade: "A", professor: "John Doe", contact: "john@example.com" },
-    { name: "Data Structures", grade: "B+", professor: "Jane Smith", contact: "jane@example.com" },
-    { name: "Algorithms", grade: "A-", professor: "Emily Davis", contact: "emily@example.com" },
-    { name: "Database Systems", grade: "B", professor: "Michael Brown", contact: "michael@example.com" },
-    { name: "Operating Systems", grade: "A", professor: "Anna Taylor", contact: "anna@example.com" },
-    { name: "Computer Networks", grade: "B+", professor: "Chris Green", contact: "chris@example.com" },
-    { name: "Software Engineering", grade: "A-", professor: "David White", contact: "david@example.com" },
-    { name: "Artificial Intelligence", grade: "A", professor: "Sarah Johnson", contact: "sarah@example.com" }
-];
 
+const courses=useLoaderData()
 
   const [hoveredCourse, setHoveredCourse] = useState(null);
 
@@ -20,7 +12,7 @@ const StudentDashboard = () => {
       <h1 className="text-4xl font-bold mb-6 text-center text-[#07B0CE]">Student Portal</h1>
       
       <p className="mb-8 text-lg text-center text-white">
-        Welcome to your dashboard. Here you can view your current courses, grades, and additional information.
+        Welcome to your dashboard.
       </p>
 
       <div className="grid gap-6 md:grid-cols-2">

@@ -1,0 +1,10 @@
+[
+    { "name": "Web Development", "grade": "A", "professor": "John Doe", "contact": "john@example.com" },
+    { "name": "Data Structures", "grade": "B+", "professor": "Jane Smith", "contact": "jane@example.com" },
+    { "name": "Algorithms", "grade": "A-", "professor": "Emily Davis", "contact": "emily@example.com" },
+    { "name": "Database Systems", "grade": "B", "professor": "Michael Brown", "contact": "michael@example.com" },
+    { "name": "Operating Systems", "grade": "A", "professor": "Anna Taylor", "contact": "anna@example.com" },
+    { "name": "Computer Networks", "grade": "B+", "professor": "Chris Green", "contact": "chris@example.com" },
+    { "name": "Software Engineering", "grade": "A-", "professor": "David White", "contact": "david@example.com" },
+    { "name": "Artificial Intelligence", "grade": "A", "professor": "Sarah Johnson", "contact": "sarah@example.com" }
+]

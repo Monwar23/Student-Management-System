@@ -22,11 +22,13 @@ const router = createBrowserRouter([
       },
       {
         path: '/student',
-        element: <StudentDashboard></StudentDashboard>
+        element: <StudentDashboard></StudentDashboard>,
+        loader:()=>fetch('/courses.json')
       },
       {
         path: '/faculty',
-        element: <FacultyManagement></FacultyManagement>
+        element: <FacultyManagement></FacultyManagement>,
+        loader:()=>fetch('/facultyList.json')
       },
       {
         path: '/enroll',

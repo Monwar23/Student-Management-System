@@ -1,22 +1,12 @@
 import { useState } from "react";
+import { useLoaderData } from "react-router-dom";
 
-const facultyList = [
-    { name: "John Doe", designation: "Professor", subject: "Computer Science", officeHours: "10 AM - 12 PM", contact: "john@university.edu" },
-    { name: "Jane Smith", designation: "Associate Professor", subject: "Mathematics", officeHours: "1 PM - 3 PM", contact: "jane@university.edu" },
-    { name: "Alice Johnson", designation: "Lecturer", subject: "Physics", officeHours: "11 AM - 1 PM", contact: "alice@university.edu" },
-    { name: "Robert Brown", designation: "Assistant Professor", subject: "Chemistry", officeHours: "2 PM - 4 PM", contact: "robert@university.edu" },
-    { name: "Emily Davis", designation: "Senior Lecturer", subject: "Biology", officeHours: "9 AM - 11 AM", contact: "emily@university.edu" },
-    { name: "Michael Wilson", designation: "Professor", subject: "History", officeHours: "12 PM - 2 PM", contact: "michael@university.edu" },
-    { name: "Laura Martinez", designation: "Associate Professor", subject: "English Literature", officeHours: "10 AM - 12 PM", contact: "laura@university.edu" },
-    { name: "James Anderson", designation: "Lecturer", subject: "Political Science", officeHours: "3 PM - 5 PM", contact: "james@university.edu" },
-    { name: "Sarah Lee", designation: "Assistant Professor", subject: "Economics", officeHours: "11 AM - 1 PM", contact: "sarah@university.edu" },
-    { name: "David White", designation: "Professor", subject: "Philosophy", officeHours: "9 AM - 11 AM", contact: "david@university.edu" }
-  ];
-  
+
 
 const FacultyManagement = () => {
   const [search, setSearch] = useState("");
   const [expandedIndex, setExpandedIndex] = useState(null);
+  const facultyList=useLoaderData()
 
   const filteredFaculty = facultyList.filter((faculty) =>
     faculty.name.toLowerCase().includes(search.toLowerCase()) ||
