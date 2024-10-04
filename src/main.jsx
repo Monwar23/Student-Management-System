@@ -11,11 +11,13 @@ import StudentDashboard from './Pages/StudentDashboard';
 import FacultyManagement from './Pages/FacultyManagement';
 import CourseRegistration from './Pages/CourseRegistration';
 import FacultyProfile from './Pages/FacultyProfile';
+import ErrorPage from './Pages/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement:<ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',

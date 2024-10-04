@@ -31,7 +31,7 @@ const StudentDashboard = () => {
 
    
             <button
-              className="mt-4 btn bg-transparent border border-[#07B0CE] mt-4 text-white hover:bg-[#07B0CE] hover:border-none"
+              className="mt-4 btn bg-transparent border border-[#07B0CE] text-white hover:bg-[#07B0CE] hover:border-none"
               onClick={() => setSelectedCourse(course)}
             >
               Details Course
