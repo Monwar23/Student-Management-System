@@ -56,57 +56,57 @@
     },
     {
         "id": 6,
-        "name": "Michael Wilson",
+        "name": "Michael Lee",
         "designation": "Professor",
-        "subject": "History",
-        "officeHours": "12 PM - 2 PM",
+        "subject": "Economics",
+        "officeHours": "1 PM - 3 PM",
         "contact": "michael@university.edu",
-        "bio": "Ph.D. in History, focusing on modern European history.",
-        "courses": ["HIST101 - World History", "HIST201 - Modern European History"],
-        "profileImage": "path/to/michael_wilson.jpg"
+        "bio": "Ph.D. in Economics with a focus on macroeconomic policies.",
+        "courses": ["ECON101 - Microeconomics", "ECON201 - Macroeconomics"],
+        "profileImage": "path/to/michael_lee.jpg"
     },
     {
         "id": 7,
-        "name": "Laura Martinez",
+        "name": "Sarah Williams",
         "designation": "Associate Professor",
-        "subject": "English Literature",
+        "subject": "History",
         "officeHours": "10 AM - 12 PM",
-        "contact": "laura@university.edu",
-        "bio": "M.A. in English Literature, specializing in Victorian literature.",
-        "courses": ["ENG101 - Introduction to Literature", "ENG201 - Victorian Literature"],
-        "profileImage": "path/to/laura_martinez.jpg"
+        "contact": "sarah@university.edu",
+        "bio": "M.A. in History with a focus on medieval European history.",
+        "courses": ["HIST101 - World History", "HIST201 - Medieval Europe"],
+        "profileImage": "path/to/sarah_williams.jpg"
     },
     {
         "id": 8,
-        "name": "James Anderson",
+        "name": "David Taylor",
         "designation": "Lecturer",
-        "subject": "Political Science",
+        "subject": "Philosophy",
         "officeHours": "3 PM - 5 PM",
-        "contact": "james@university.edu",
-        "bio": "B.A. in Political Science, with research interests in international relations.",
-        "courses": ["POL101 - Introduction to Political Science", "POL201 - International Relations"],
-        "profileImage": "path/to/james_anderson.jpg"
+        "contact": "david@university.edu",
+        "bio": "M.A. in Philosophy with research in ethics and political philosophy.",
+        "courses": ["PHIL101 - Introduction to Philosophy", "PHIL201 - Ethics"],
+        "profileImage": "path/to/david_taylor.jpg"
     },
     {
         "id": 9,
-        "name": "Sarah Lee",
+        "name": "Olivia Martinez",
         "designation": "Assistant Professor",
-        "subject": "Economics",
-        "officeHours": "11 AM - 1 PM",
-        "contact": "sarah@university.edu",
-        "bio": "Ph.D. in Economics, specializing in microeconomics and labor economics.",
-        "courses": ["ECO101 - Principles of Economics", "ECO201 - Microeconomics"],
-        "profileImage": "path/to/sarah_lee.jpg"
+        "subject": "Psychology",
+        "officeHours": "12 PM - 2 PM",
+        "contact": "olivia@university.edu",
+        "bio": "Ph.D. in Psychology focusing on cognitive behavioral therapy.",
+        "courses": ["PSYCH101 - Introduction to Psychology", "PSYCH201 - Cognitive Psychology"],
+        "profileImage": "path/to/olivia_martinez.jpg"
     },
     {
         "id": 10,
-        "name": "David White",
-        "designation": "Professor",
-        "subject": "Philosophy",
+        "name": "James Anderson",
+        "designation": "Senior Lecturer",
+        "subject": "Sociology",
         "officeHours": "9 AM - 11 AM",
-        "contact": "david@university.edu",
-        "bio": "Ph.D. in Philosophy, focusing on ethics and political philosophy.",
-        "courses": ["PHIL101 - Introduction to Philosophy", "PHIL201 - Ethics"],
-        "profileImage": "path/to/david_white.jpg"
+        "contact": "james@university.edu",
+        "bio": "M.A. in Sociology with a focus on social inequality and justice.",
+        "courses": ["SOC101 - Introduction to Sociology", "SOC201 - Social Stratification"],
+        "profileImage": "path/to/james_anderson.jpg"
     }
 ]
