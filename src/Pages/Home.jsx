@@ -1,17 +1,48 @@
+import CountUp from "react-countup";
 import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
         <div>
-            <section className=" text-white text-center pt-20 pb-5">
-                <h1 className="text-4xl font-bold">Welcome to <span className="text-[#07B0CE]">OceanCapp</span> University</h1>
-                <p className="mt-4 text-lg">Manage your courses, faculty, and more all in one place</p>
-               <Link to='/student'>
-               <button className="mt-8 border-2 border-[#07B0CE] text-[#07B0CE] px-4 py-2 rounded-lg hover:bg-[#07B0CE] hover:text-white transition duration-300">
+            <section className="text-white text-center pt-20 pb-5">
+            <h1 className="text-4xl font-bold">Welcome to <span className="text-[#07B0CE]">OceanCapp</span> University</h1>
+            <p className="mt-4 text-lg">Manage your courses, faculty, and more all in one place</p>
+            
+            <div className="mt-8">
+                <div className="flex justify-center space-x-10">
+                    <div>
+                        <h2 className="text-3xl font-bold">
+                            <CountUp start={0} end={8} duration={5} /> 
+                        </h2>
+                        <p className="text-lg">Faculties</p>
+                    </div>
+                    <div>
+                        <h2 className="text-3xl font-bold">
+                            <CountUp start={0} end={20} duration={2} /> 
+                        </h2>
+                        <p className="text-lg">Academic Programs</p>
+                    </div>
+                    <div>
+                        <h2 className="text-3xl font-bold">
+                            <CountUp start={0} end={2000} duration={2} /> 
+                        </h2>
+                        <p className="text-lg">Total Graduates</p>
+                    </div>
+                    <div>
+                        <h2 className="text-3xl font-bold">
+                            <CountUp start={0} end={5} duration={2} /> 
+                        </h2>
+                        <p className="text-lg">Convocations Held</p>
+                    </div>
+                </div>
+            </div>
+
+            <Link to='/student'>
+                <button className="mt-8 border-2 border-[#07B0CE] text-[#07B0CE] px-4 py-2 rounded-lg hover:bg-[#07B0CE] hover:text-white transition duration-300">
                     Get Started
                 </button>
-               </Link>
-            </section>
+            </Link>
+        </section>
 
             <section className="py-16 ">
                 <div className="container mx-auto text-center text-white">
