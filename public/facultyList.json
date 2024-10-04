@@ -1,112 +1,285 @@
 [
     {
         "id": 1,
-        "name": "John Doe",
-        "designation": "Professor",
-        "subject": "Computer Science",
-        "officeHours": "10 AM - 12 PM",
-        "contact": "john@university.edu",
-        "bio": "Ph.D. in Computer Science from XYZ University. Research interests include algorithms and artificial intelligence.",
-        "courses": ["CS101 - Introduction to Programming", "CS201 - Data Structures"],
-        "profileImage": "https://i.ibb.co.com/sbHX87w/Whats-App-Image-2024-10-04-at-22-39-32-fb73657b.jpg"
+        "facultyName": "Faculty of Science",
+        "deanName": "Dr. Richard H. Taylor",
+        "facultyDetails": {
+            "contact": "+123456789",
+            "officeHours": "9 AM - 5 PM",
+            "location": "Science Building, Main Campus"
+        },
+        "departments": [
+            {
+                "id": 1,
+                "name": "Department of Computer Science",
+                "head": "John Doe",
+                "contact": "john@university.edu",
+                "officeHours": "10 AM - 12 PM",
+                "courses": [
+                    "CS101 - Introduction to Programming",
+                    "CS201 - Data Structures"
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Department of Mathematics",
+                "head": "Jane Smith",
+                "contact": "jane@university.edu",
+                "officeHours": "1 PM - 3 PM",
+                "courses": [
+                    "MATH101 - Calculus I",
+                    "MATH201 - Linear Algebra"
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Department of Physics",
+                "head": "Alice Johnson",
+                "contact": "alice@university.edu",
+                "officeHours": "11 AM - 1 PM",
+                "courses": [
+                    "PHYS101 - General Physics",
+                    "PHYS201 - Quantum Mechanics"
+                ]
+            }
+        ]
     },
     {
         "id": 2,
-        "name": "Jane Smith",
-        "designation": "Associate Professor",
-        "subject": "Mathematics",
-        "officeHours": "1 PM - 3 PM",
-        "contact": "jane@university.edu",
-        "bio": "M.Sc. in Mathematics. Focus on number theory and statistics.",
-        "courses": ["MATH101 - Calculus I", "MATH201 - Linear Algebra"],
-        "profileImage": "https://i.ibb.co.com/pbL5pSY/Whats-App-Image-2024-10-04-at-22-39-31-bfde0240.jpg"
+        "facultyName": "Faculty of Arts",
+        "deanName": "Dr. Emily Roberts",
+        "facultyDetails": {
+            "contact": "+987654321",
+            "officeHours": "9 AM - 5 PM",
+            "location": "Arts Building, North Wing"
+        },
+        "departments": [
+            {
+                "id": 4,
+                "name": "Department of History",
+                "head": "Sarah Williams",
+                "contact": "sarah@university.edu",
+                "officeHours": "10 AM - 12 PM",
+                "courses": [
+                    "HIST101 - World History",
+                    "HIST201 - Medieval Europe"
+                ]
+            },
+            {
+                "id": 5,
+                "name": "Department of Philosophy",
+                "head": "David Taylor",
+                "contact": "david@university.edu",
+                "officeHours": "3 PM - 5 PM",
+                "courses": [
+                    "PHIL101 - Introduction to Philosophy",
+                    "PHIL201 - Ethics"
+                ]
+            }
+        ]
     },
     {
         "id": 3,
-        "name": "Alice Johnson",
-        "designation": "Lecturer",
-        "subject": "Physics",
-        "officeHours": "11 AM - 1 PM",
-        "contact": "alice@university.edu",
-        "bio": "B.Sc. in Physics with research in quantum mechanics.",
-        "courses": ["PHYS101 - General Physics", "PHYS201 - Quantum Mechanics"],
-        "profileImage": "https://i.ibb.co.com/P6jRCVR/Whats-App-Image-2024-10-04-at-22-39-30-103912f2.jpg"
+        "facultyName": "Faculty of Social Science",
+        "deanName": "Dr. Michael B. Johnson",
+        "facultyDetails": {
+            "contact": "+1122334455",
+            "officeHours": "9 AM - 5 PM",
+            "location": "Social Sciences Building, East Wing"
+        },
+        "departments": [
+            {
+                "id": 6,
+                "name": "Department of Sociology",
+                "head": "James Anderson",
+                "contact": "james@university.edu",
+                "officeHours": "9 AM - 11 AM",
+                "courses": [
+                    "SOC101 - Introduction to Sociology",
+                    "SOC201 - Social Stratification"
+                ]
+            },
+            {
+                "id": 7,
+                "name": "Department of Psychology",
+                "head": "Olivia Martinez",
+                "contact": "olivia@university.edu",
+                "officeHours": "12 PM - 2 PM",
+                "courses": [
+                    "PSYCH101 - Introduction to Psychology",
+                    "PSYCH201 - Cognitive Psychology"
+                ]
+            }
+        ]
     },
     {
         "id": 4,
-        "name": "Robert Brown",
-        "designation": "Assistant Professor",
-        "subject": "Chemistry",
-        "officeHours": "2 PM - 4 PM",
-        "contact": "robert@university.edu",
-        "bio": "Ph.D. in Chemistry specializing in organic synthesis.",
-        "courses": ["CHEM101 - Introduction to Chemistry", "CHEM201 - Organic Chemistry"],
-        "profileImage": "https://i.ibb.co.com/FXJ7PrB/Whats-App-Image-2024-10-04-at-22-39-28-adb57743.jpg"
+        "facultyName": "Faculty of Engineering",
+        "deanName": "Dr. Sarah J. Collins",
+        "facultyDetails": {
+            "contact": "+2233445566",
+            "officeHours": "9 AM - 5 PM",
+            "location": "Engineering Building, South Wing"
+        },
+        "departments": [
+            {
+                "id": 8,
+                "name": "Department of Electrical Engineering",
+                "head": "Robert Brown",
+                "contact": "robert@university.edu",
+                "officeHours": "2 PM - 4 PM",
+                "courses": [
+                    "EE101 - Circuit Analysis",
+                    "EE201 - Signal Processing"
+                ]
+            },
+            {
+                "id": 9,
+                "name": "Department of Mechanical Engineering",
+                "head": "Emily Davis",
+                "contact": "emily@university.edu",
+                "officeHours": "9 AM - 11 AM",
+                "courses": [
+                    "ME101 - Thermodynamics",
+                    "ME201 - Fluid Mechanics"
+                ]
+            }
+        ]
     },
     {
         "id": 5,
-        "name": "Emily Davis",
-        "designation": "Senior Lecturer",
-        "subject": "Biology",
-        "officeHours": "9 AM - 11 AM",
-        "contact": "emily@university.edu",
-        "bio": "M.Sc. in Biology with a focus on ecology and evolution.",
-        "courses": ["BIO101 - Introduction to Biology", "BIO201 - Ecology"],
-        "profileImage": "https://i.ibb.co.com/YZQNFjG/Whats-App-Image-2024-10-04-at-22-39-27-e359895b.jpg"
+        "facultyName": "Faculty of Medicine",
+        "deanName": "Dr. James L. Carter",
+        "facultyDetails": {
+            "contact": "+3344556677",
+            "officeHours": "9 AM - 5 PM",
+            "location": "Medical School, Main Campus"
+        },
+        "departments": [
+            {
+                "id": 10,
+                "name": "Department of Anatomy",
+                "head": "Dr. Michael Green",
+                "contact": "michael@university.edu",
+                "officeHours": "8 AM - 10 AM",
+                "courses": [
+                    "ANAT101 - Human Anatomy",
+                    "ANAT201 - Comparative Anatomy"
+                ]
+            },
+            {
+                "id": 11,
+                "name": "Department of Physiology",
+                "head": "Dr. Lisa White",
+                "contact": "lisa@university.edu",
+                "officeHours": "1 PM - 3 PM",
+                "courses": [
+                    "PHYSIO101 - Human Physiology",
+                    "PHYSIO201 - Neurophysiology"
+                ]
+            }
+        ]
     },
     {
         "id": 6,
-        "name": "Michael Lee",
-        "designation": "Professor",
-        "subject": "Economics",
-        "officeHours": "1 PM - 3 PM",
-        "contact": "michael@university.edu",
-        "bio": "Ph.D. in Economics with a focus on macroeconomic policies.",
-        "courses": ["ECON101 - Microeconomics", "ECON201 - Macroeconomics"],
-        "profileImage": "https://i.ibb.co.com/BCBqm14/Whats-App-Image-2024-10-04-at-22-39-26-116b6f9a.jpg"
+        "facultyName": "Faculty of Business",
+        "deanName": "Dr. Emily W. Johnson",
+        "facultyDetails": {
+            "contact": "+5566778899",
+            "officeHours": "9 AM - 5 PM",
+            "location": "Business Building, West Wing"
+        },
+        "departments": [
+            {
+                "id": 12,
+                "name": "Department of Management",
+                "head": "David Wilson",
+                "contact": "david.wilson@university.edu",
+                "officeHours": "10 AM - 12 PM",
+                "courses": [
+                    "MGT101 - Principles of Management",
+                    "MGT201 - Strategic Management"
+                ]
+            },
+            {
+                "id": 13,
+                "name": "Department of Finance",
+                "head": "Susan Brown",
+                "contact": "susan.brown@university.edu",
+                "officeHours": "2 PM - 4 PM",
+                "courses": [
+                    "FIN101 - Introduction to Finance",
+                    "FIN201 - Corporate Finance"
+                ]
+            }
+        ]
     },
     {
         "id": 7,
-        "name": "Sarah Williams",
-        "designation": "Associate Professor",
-        "subject": "History",
-        "officeHours": "10 AM - 12 PM",
-        "contact": "sarah@university.edu",
-        "bio": "M.A. in History with a focus on medieval European history.",
-        "courses": ["HIST101 - World History", "HIST201 - Medieval Europe"],
-        "profileImage": "https://i.ibb.co.com/YD55SPP/Whats-App-Image-2024-10-04-at-22-39-23-9f89ff35.jpg"
+        "facultyName": "Faculty of Law",
+        "deanName": "Dr. Anna K. Johnson",
+        "facultyDetails": {
+            "contact": "+9988776655",
+            "officeHours": "9 AM - 5 PM",
+            "location": "Law Building, South Campus"
+        },
+        "departments": [
+            {
+                "id": 14,
+                "name": "Department of Criminal Law",
+                "head": "Thomas Anderson",
+                "contact": "thomas@university.edu",
+                "officeHours": "10 AM - 12 PM",
+                "courses": [
+                    "CRIM101 - Introduction to Criminal Law",
+                    "CRIM201 - Criminal Procedure"
+                ]
+            },
+            {
+                "id": 15,
+                "name": "Department of Civil Law",
+                "head": "Karen Taylor",
+                "contact": "karen@university.edu",
+                "officeHours": "1 PM - 3 PM",
+                "courses": [
+                    "CIVIL101 - Introduction to Civil Law",
+                    "CIVIL201 - Family Law"
+                ]
+            }
+        ]
     },
     {
         "id": 8,
-        "name": "David Taylor",
-        "designation": "Lecturer",
-        "subject": "Philosophy",
-        "officeHours": "3 PM - 5 PM",
-        "contact": "david@university.edu",
-        "bio": "M.A. in Philosophy with research in ethics and political philosophy.",
-        "courses": ["PHIL101 - Introduction to Philosophy", "PHIL201 - Ethics"],
-        "profileImage": "https://i.ibb.co.com/1sG9kKL/Whats-App-Image-2024-10-04-at-22-39-24-572aab94.jpg"
-    },
-    {
-        "id": 9,
-        "name": "Olivia Martinez",
-        "designation": "Assistant Professor",
-        "subject": "Psychology",
-        "officeHours": "12 PM - 2 PM",
-        "contact": "olivia@university.edu",
-        "bio": "Ph.D. in Psychology focusing on cognitive behavioral therapy.",
-        "courses": ["PSYCH101 - Introduction to Psychology", "PSYCH201 - Cognitive Psychology"],
-        "profileImage": "https://i.ibb.co.com/9rY2SGV/Whats-App-Image-2024-10-04-at-22-39-35-887068a6.jpg"
-    },
-    {
-        "id": 10,
-        "name": "James Anderson",
-        "designation": "Senior Lecturer",
-        "subject": "Sociology",
-        "officeHours": "9 AM - 11 AM",
-        "contact": "james@university.edu",
-        "bio": "M.A. in Sociology with a focus on social inequality and justice.",
-        "courses": ["SOC101 - Introduction to Sociology", "SOC201 - Social Stratification"],
-        "profileImage": "https://i.ibb.co.com/Ks6LPWq/Whats-App-Image-2024-10-04-at-22-39-33-6fa97259.jpg"
+        "facultyName": "Faculty of Agriculture",
+        "deanName": "Dr. Laura J. Smith",
+        "facultyDetails": {
+            "contact": "+6677889900",
+            "officeHours": "9 AM - 5 PM",
+            "location": "Agriculture Building, Main Campus"
+        },
+        "departments": [
+            {
+                "id": 16,
+                "name": "Department of Crop Science",
+                "head": "Laura Green",
+                "contact": "laura@university.edu",
+                "officeHours": "10 AM - 12 PM",
+                "courses": [
+                    "CROP101 - Principles of Crop Science",
+                    "CROP201 - Soil Management"
+                ]
+            },
+            {
+                "id": 17,
+                "name": "Department of Animal Science",
+                "head": "James King",
+                "contact": "james.king@university.edu",
+                "officeHours": "2 PM - 4 PM",
+                "courses": [
+                    "ANIMAL101 - Introduction to Animal Science",
+                    "ANIMAL201 - Livestock Management"
+                ]
+            }
+        ]
     }
 ]

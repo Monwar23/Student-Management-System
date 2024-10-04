@@ -1,21 +1,14 @@
 import { useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 
-
-
 const FacultyManagement = () => {
   const [search, setSearch] = useState("");
-  const [expandedIndex, setExpandedIndex] = useState(null);
-  const facultyList=useLoaderData()
+  const facultyList = useLoaderData();
 
+  // Filter faculty list based on search input
   const filteredFaculty = facultyList.filter((faculty) =>
-    faculty.name.toLowerCase().includes(search.toLowerCase()) ||
-    faculty.subject.toLowerCase().includes(search.toLowerCase())
+    faculty.facultyName.toLowerCase().includes(search.toLowerCase())
   );
-
-  const toggleExpand = (index) => {
-    setExpandedIndex(expandedIndex === index ? null : index);
-  };
 
   const handleSearch = () => {
     console.log("Search term:", search);
@@ -28,7 +21,7 @@ const FacultyManagement = () => {
       <div className="flex justify-center items-center mb-6">
         <input
           type="text"
-          placeholder="Search Faculty by Name or Subject"
+          placeholder="Search Faculty by Name"
           className="border border-[#07B0CE] focus:border-[#07B0CE] focus:outline-[#07B0CE] p-2 rounded-l-md w-1/2 md:w-1/2 bg-transparent text-white"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
@@ -42,31 +35,29 @@ const FacultyManagement = () => {
       </div>
 
       <div className="grid gap-6 md:grid-cols-2">
-        {filteredFaculty.map((faculty, index) => (
+        {filteredFaculty.map((faculty) => (
           <div
-            key={index}
-            className="border border-[#07B0CE] p-6 shadow-lg rounded-lg hover:shadow-xl transition relative"
+            key={faculty.id}
+            className="border border-[#07B0CE] p-6 shadow-lg rounded-lg transition"
           >
            <div className="flex justify-between">
-           <div className="cursor-pointer" onClick={() => toggleExpand(index)}>
-              <h2 className="text-2xl font-semibold text-[#07B0CE]">{faculty.name}</h2>
-              <p className="text-white mt-2">{faculty.designation}</p>
-              <p className="text-white">Subject : {faculty.subject}</p>
-            </div>
-            <Link to={`/faculty/${faculty.id}`} className="btn bg-transparent border border-[#07B0CE] mt-4 text-white hover:bg-[#07B0CE] hover:border-none">View Details</Link>
+           <div>
+           <h2 className="text-2xl font-semibold text-[#07B0CE]">
+              {faculty.facultyName}
+            </h2>
+            <p className="text-white">Dean: {faculty.deanName}</p>
            </div>
-            {expandedIndex === index && (
-              <div className="mt-4 border border-[#07B0CE] p-4 rounded-lg shadow-lg">
-                <p className="text-white"><strong>Office Hours : </strong> {faculty.officeHours}</p>
-                <p className="text-white"><strong>Contact : </strong> <a href={`mailto:${faculty.contact}`} className="text-white">{faculty.contact}</a></p>
-              </div>
-            )}
+           <Link
+              to={`/faculty/${faculty.id}`}
+              className="mt-4 text-[#07B0CE] hover:underline"
+            >
+              Details
+            </Link>
+           
+           </div>
+          
           </div>
         ))}
-
-        {filteredFaculty.length === 0 && (
-          <p className="text-center text-white">No faculty members found.</p>
-        )}
       </div>
     </div>
   );
