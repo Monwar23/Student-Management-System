@@ -25,13 +25,13 @@ const StudentDashboard = () => {
 
             {hoveredCourse === index && (
               <div className="absolute top-0 right-0 p-4 border-2 border-[#07B0CE] rounded-lg shadow-lg z-10">
-                <p className="text-white">Contact : <a href={`mailto:${course.contact}`} className="text-white">{course.contact}</a></p>
+                <p className="text-white"><span className="text-[#07B0CE]">Contact</span> : <a href={`mailto:${course.contact}`} className="text-white">{course.contact}</a></p>
               </div>
             )}
 
    
             <button
-              className="mt-4 border-2 border-[#07B0CE] text-[#07B0CE] px-4 py-2 rounded-lg hover:bg-[#07B0CE] hover:text-white transition duration-300"
+              className="mt-4 btn bg-transparent border border-[#07B0CE] mt-4 text-white hover:bg-[#07B0CE] hover:border-none"
               onClick={() => setSelectedCourse(course)}
             >
               Details Course
