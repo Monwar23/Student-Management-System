@@ -8,7 +8,7 @@
         "contact": "john@university.edu",
         "bio": "Ph.D. in Computer Science from XYZ University. Research interests include algorithms and artificial intelligence.",
         "courses": ["CS101 - Introduction to Programming", "CS201 - Data Structures"],
-        "profileImage": "path/to/john_doe.jpg"
+        "profileImage": "https://i.ibb.co.com/sbHX87w/Whats-App-Image-2024-10-04-at-22-39-32-fb73657b.jpg"
     },
     {
         "id": 2,
@@ -19,7 +19,7 @@
         "contact": "jane@university.edu",
         "bio": "M.Sc. in Mathematics. Focus on number theory and statistics.",
         "courses": ["MATH101 - Calculus I", "MATH201 - Linear Algebra"],
-        "profileImage": "path/to/jane_smith.jpg"
+        "profileImage": "https://i.ibb.co.com/pbL5pSY/Whats-App-Image-2024-10-04-at-22-39-31-bfde0240.jpg"
     },
     {
         "id": 3,
@@ -30,7 +30,7 @@
         "contact": "alice@university.edu",
         "bio": "B.Sc. in Physics with research in quantum mechanics.",
         "courses": ["PHYS101 - General Physics", "PHYS201 - Quantum Mechanics"],
-        "profileImage": "path/to/alice_johnson.jpg"
+        "profileImage": "https://i.ibb.co.com/P6jRCVR/Whats-App-Image-2024-10-04-at-22-39-30-103912f2.jpg"
     },
     {
         "id": 4,
@@ -41,7 +41,7 @@
         "contact": "robert@university.edu",
         "bio": "Ph.D. in Chemistry specializing in organic synthesis.",
         "courses": ["CHEM101 - Introduction to Chemistry", "CHEM201 - Organic Chemistry"],
-        "profileImage": "path/to/robert_brown.jpg"
+        "profileImage": "https://i.ibb.co.com/FXJ7PrB/Whats-App-Image-2024-10-04-at-22-39-28-adb57743.jpg"
     },
     {
         "id": 5,
@@ -52,7 +52,7 @@
         "contact": "emily@university.edu",
         "bio": "M.Sc. in Biology with a focus on ecology and evolution.",
         "courses": ["BIO101 - Introduction to Biology", "BIO201 - Ecology"],
-        "profileImage": "path/to/emily_davis.jpg"
+        "profileImage": "https://i.ibb.co.com/YZQNFjG/Whats-App-Image-2024-10-04-at-22-39-27-e359895b.jpg"
     },
     {
         "id": 6,
@@ -63,7 +63,7 @@
         "contact": "michael@university.edu",
         "bio": "Ph.D. in Economics with a focus on macroeconomic policies.",
         "courses": ["ECON101 - Microeconomics", "ECON201 - Macroeconomics"],
-        "profileImage": "path/to/michael_lee.jpg"
+        "profileImage": "https://i.ibb.co.com/BCBqm14/Whats-App-Image-2024-10-04-at-22-39-26-116b6f9a.jpg"
     },
     {
         "id": 7,
@@ -74,7 +74,7 @@
         "contact": "sarah@university.edu",
         "bio": "M.A. in History with a focus on medieval European history.",
         "courses": ["HIST101 - World History", "HIST201 - Medieval Europe"],
-        "profileImage": "path/to/sarah_williams.jpg"
+        "profileImage": "https://i.ibb.co.com/YD55SPP/Whats-App-Image-2024-10-04-at-22-39-23-9f89ff35.jpg"
     },
     {
         "id": 8,
@@ -85,7 +85,7 @@
         "contact": "david@university.edu",
         "bio": "M.A. in Philosophy with research in ethics and political philosophy.",
         "courses": ["PHIL101 - Introduction to Philosophy", "PHIL201 - Ethics"],
-        "profileImage": "path/to/david_taylor.jpg"
+        "profileImage": "https://i.ibb.co.com/1sG9kKL/Whats-App-Image-2024-10-04-at-22-39-24-572aab94.jpg"
     },
     {
         "id": 9,
@@ -96,7 +96,7 @@
         "contact": "olivia@university.edu",
         "bio": "Ph.D. in Psychology focusing on cognitive behavioral therapy.",
         "courses": ["PSYCH101 - Introduction to Psychology", "PSYCH201 - Cognitive Psychology"],
-        "profileImage": "path/to/olivia_martinez.jpg"
+        "profileImage": "https://i.ibb.co.com/9rY2SGV/Whats-App-Image-2024-10-04-at-22-39-35-887068a6.jpg"
     },
     {
         "id": 10,
@@ -107,6 +107,6 @@
         "contact": "james@university.edu",
         "bio": "M.A. in Sociology with a focus on social inequality and justice.",
         "courses": ["SOC101 - Introduction to Sociology", "SOC201 - Social Stratification"],
-        "profileImage": "path/to/james_anderson.jpg"
+        "profileImage": "https://i.ibb.co.com/Ks6LPWq/Whats-App-Image-2024-10-04-at-22-39-33-6fa97259.jpg"
     }
 ]
