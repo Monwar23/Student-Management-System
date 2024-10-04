@@ -18,7 +18,7 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <div className="navbar-start">
-                <a className="btn btn-ghost normal-case text-xl text-white">OceanCapp University</a>
+                <Link to='/' className="btn btn-ghost normal-case text-xl text-white"><span className="text-[#07B0CE]">OceanCapp</span> University</Link>
             </div>
 
             <div className="navbar-center hidden lg:flex">

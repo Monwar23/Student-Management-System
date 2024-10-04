@@ -21,14 +21,14 @@ const CourseRegistration = () => {
     return (
         <div className="min-h-screen flex items-center justify-center p-8">
             <div className="p-8 rounded-lg shadow-lg w-full max-w-lg border border-[#07B0CE]">
-                <h2 className="text-3xl font-bold text-[#07B0CE] mb-6 text-center">
+                <h2 className="text-3xl font-bold text-white mb-6 text-center">
                     Enroll in Courses
                 </h2>
 
                 {!submitted ? (
                     <form onSubmit={handleSubmit} className="space-y-6">
                         <div>
-                            <label className="block text-white font-semibold">Name</label>
+                            <label className="block text-[#07B0CE] font-semibold">Name</label>
                             <input
                                 type="text"
                                 ref={nameRef}
@@ -37,7 +37,7 @@ const CourseRegistration = () => {
                         </div>
 
                         <div>
-                            <label className="block text-white font-semibold">Email</label>
+                            <label className="block text-[#07B0CE] font-semibold">Email</label>
                             <input
                                 type="email"
                                 ref={emailRef}

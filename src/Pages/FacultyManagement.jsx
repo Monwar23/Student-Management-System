@@ -23,7 +23,7 @@ const FacultyManagement = () => {
 
   return (
     <div className="p-8 min-h-screen">
-      <h1 className="text-4xl font-bold mb-6 text-center text-[#07B0CE]">Faculty Overview</h1>
+      <h1 className="text-4xl font-bold mb-6 text-center text-white">Faculty Overview</h1>
 
       <div className="flex justify-center items-center mb-6">
         <input

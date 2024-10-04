@@ -46,7 +46,7 @@ const Footer = () => {
     </div>
   </nav>
   <aside>
-    <p>Copyright © {new Date().getFullYear()} - All right reserved by OceanCapp University</p>
+    <p>Copyright © {new Date().getFullYear()} - All right reserved by <span className="text-[#07B0CE]">OceanCapp</span> University</p>
   </aside>
 </footer>
     );
