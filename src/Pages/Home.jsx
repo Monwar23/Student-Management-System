@@ -18,30 +18,37 @@ const Home = () => {
                     </div>
                     <div>
                         <h2 className="text-3xl font-bold">
-                            <CountUp start={0} end={20} duration={2} /> 
+                            <CountUp start={0} end={21} duration={2} /> 
                         </h2>
                         <p className="text-lg">Academic Programs</p>
                     </div>
                     <div>
                         <h2 className="text-3xl font-bold">
-                            <CountUp start={0} end={2000} duration={2} /> 
+                            <CountUp start={0} end={2021} duration={2} /> 
                         </h2>
                         <p className="text-lg">Total Graduates</p>
                     </div>
                     <div>
                         <h2 className="text-3xl font-bold">
-                            <CountUp start={0} end={5} duration={2} /> 
+                            <CountUp start={0} end={12} duration={2} /> 
                         </h2>
                         <p className="text-lg">Convocations Held</p>
                     </div>
                 </div>
             </div>
 
+            <div>
             <Link to='/student'>
                 <button className="mt-8 border-2 border-[#07B0CE] text-[#07B0CE] px-4 py-2 rounded-lg hover:bg-[#07B0CE] hover:text-white transition duration-300">
                     Get Started
                 </button>
             </Link>
+            <Link to='/contact'>
+                <button className="mt-8 border-2 border-[#07B0CE] text-[#07B0CE] px-4 py-2 rounded-lg hover:bg-[#07B0CE] hover:text-white transition duration-300">
+                    Contact Us
+                </button>
+            </Link>
+            </div>
         </section>
 
             <section className="py-16 ">

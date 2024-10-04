@@ -12,6 +12,7 @@ import FacultyManagement from './Pages/FacultyManagement';
 import CourseRegistration from './Pages/CourseRegistration';
 import FacultyProfile from './Pages/FacultyProfile';
 import ErrorPage from './Pages/ErrorPage';
+import Contact from './Pages/Contact';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
         path: '/faculty/:id',
         element: <FacultyProfile></FacultyProfile>,
         loader:()=>fetch('/facultyList.json')
+      },
+      {
+        path: '/contact',
+        element: <Contact></Contact>
       },
 
     ]
