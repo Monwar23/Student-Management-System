@@ -5,7 +5,6 @@ const FacultyManagement = () => {
   const [search, setSearch] = useState("");
   const facultyList = useLoaderData();
 
-  // Filter faculty list based on search input
   const filteredFaculty = facultyList.filter((faculty) =>
     faculty.facultyName.toLowerCase().includes(search.toLowerCase())
   );
@@ -40,22 +39,29 @@ const FacultyManagement = () => {
             key={faculty.id}
             className="border border-[#07B0CE] p-6 shadow-lg rounded-lg transition"
           >
-           <div className="flex justify-between">
-           <div>
-           <h2 className="text-2xl font-semibold text-[#07B0CE]">
+            <div className="flex justify-between">
+            <div>
+            <h2 className="text-2xl font-semibold text-[#07B0CE]">
               {faculty.facultyName}
             </h2>
             <p className="text-white">Dean: {faculty.deanName}</p>
-           </div>
-           <Link
+            <h3 className="text-lg font-semibold text-[#07B0CE] mt-4">Departments:</h3>
+            <p className="text-white">
+              {faculty.departments.map((department, index) => (
+                <span key={department.id}>
+                  {department.name}
+                  {index < faculty.departments.length - 1 && ", "}
+                </span>
+              ))}
+            </p>
+            </div>
+            <Link
               to={`/faculty/${faculty.id}`}
               className="mt-4 text-[#07B0CE] hover:underline"
             >
               Details
             </Link>
-           
-           </div>
-          
+            </div>
           </div>
         ))}
       </div>
