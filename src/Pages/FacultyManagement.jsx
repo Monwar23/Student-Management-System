@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 
 
@@ -47,12 +47,14 @@ const FacultyManagement = () => {
             key={index}
             className="border border-[#07B0CE] p-6 shadow-lg rounded-lg hover:shadow-xl transition relative"
           >
-            <div className="cursor-pointer" onClick={() => toggleExpand(index)}>
+           <div className="flex justify-between">
+           <div className="cursor-pointer" onClick={() => toggleExpand(index)}>
               <h2 className="text-2xl font-semibold text-[#07B0CE]">{faculty.name}</h2>
               <p className="text-white mt-2">{faculty.designation}</p>
               <p className="text-white">Subject : {faculty.subject}</p>
             </div>
-
+            <Link to={`/faculty/${faculty.id}`} className="btn bg-transparent border border-[#07B0CE] mt-4 text-white hover:bg-[#07B0CE] hover:border-none">View Details</Link>
+           </div>
             {expandedIndex === index && (
               <div className="mt-4 border border-[#07B0CE] p-4 rounded-lg shadow-lg">
                 <p className="text-white"><strong>Office Hours : </strong> {faculty.officeHours}</p>

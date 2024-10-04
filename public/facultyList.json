@@ -1,72 +1,112 @@
 [
     {
+        "id": 1,
         "name": "John Doe",
         "designation": "Professor",
         "subject": "Computer Science",
         "officeHours": "10 AM - 12 PM",
-        "contact": "john@university.edu"
+        "contact": "john@university.edu",
+        "bio": "Ph.D. in Computer Science from XYZ University. Research interests include algorithms and artificial intelligence.",
+        "courses": ["CS101 - Introduction to Programming", "CS201 - Data Structures"],
+        "profileImage": "path/to/john_doe.jpg"
     },
     {
+        "id": 2,
         "name": "Jane Smith",
         "designation": "Associate Professor",
         "subject": "Mathematics",
         "officeHours": "1 PM - 3 PM",
-        "contact": "jane@university.edu"
+        "contact": "jane@university.edu",
+        "bio": "M.Sc. in Mathematics. Focus on number theory and statistics.",
+        "courses": ["MATH101 - Calculus I", "MATH201 - Linear Algebra"],
+        "profileImage": "path/to/jane_smith.jpg"
     },
     {
+        "id": 3,
         "name": "Alice Johnson",
         "designation": "Lecturer",
         "subject": "Physics",
         "officeHours": "11 AM - 1 PM",
-        "contact": "alice@university.edu"
+        "contact": "alice@university.edu",
+        "bio": "B.Sc. in Physics with research in quantum mechanics.",
+        "courses": ["PHYS101 - General Physics", "PHYS201 - Quantum Mechanics"],
+        "profileImage": "path/to/alice_johnson.jpg"
     },
     {
+        "id": 4,
         "name": "Robert Brown",
         "designation": "Assistant Professor",
         "subject": "Chemistry",
         "officeHours": "2 PM - 4 PM",
-        "contact": "robert@university.edu"
+        "contact": "robert@university.edu",
+        "bio": "Ph.D. in Chemistry specializing in organic synthesis.",
+        "courses": ["CHEM101 - Introduction to Chemistry", "CHEM201 - Organic Chemistry"],
+        "profileImage": "path/to/robert_brown.jpg"
     },
     {
+        "id": 5,
         "name": "Emily Davis",
         "designation": "Senior Lecturer",
         "subject": "Biology",
         "officeHours": "9 AM - 11 AM",
-        "contact": "emily@university.edu"
+        "contact": "emily@university.edu",
+        "bio": "M.Sc. in Biology with a focus on ecology and evolution.",
+        "courses": ["BIO101 - Introduction to Biology", "BIO201 - Ecology"],
+        "profileImage": "path/to/emily_davis.jpg"
     },
     {
+        "id": 6,
         "name": "Michael Wilson",
         "designation": "Professor",
         "subject": "History",
         "officeHours": "12 PM - 2 PM",
-        "contact": "michael@university.edu"
+        "contact": "michael@university.edu",
+        "bio": "Ph.D. in History, focusing on modern European history.",
+        "courses": ["HIST101 - World History", "HIST201 - Modern European History"],
+        "profileImage": "path/to/michael_wilson.jpg"
     },
     {
+        "id": 7,
         "name": "Laura Martinez",
         "designation": "Associate Professor",
         "subject": "English Literature",
         "officeHours": "10 AM - 12 PM",
-        "contact": "laura@university.edu"
+        "contact": "laura@university.edu",
+        "bio": "M.A. in English Literature, specializing in Victorian literature.",
+        "courses": ["ENG101 - Introduction to Literature", "ENG201 - Victorian Literature"],
+        "profileImage": "path/to/laura_martinez.jpg"
     },
     {
+        "id": 8,
         "name": "James Anderson",
         "designation": "Lecturer",
         "subject": "Political Science",
         "officeHours": "3 PM - 5 PM",
-        "contact": "james@university.edu"
+        "contact": "james@university.edu",
+        "bio": "B.A. in Political Science, with research interests in international relations.",
+        "courses": ["POL101 - Introduction to Political Science", "POL201 - International Relations"],
+        "profileImage": "path/to/james_anderson.jpg"
     },
     {
+        "id": 9,
         "name": "Sarah Lee",
         "designation": "Assistant Professor",
         "subject": "Economics",
         "officeHours": "11 AM - 1 PM",
-        "contact": "sarah@university.edu"
+        "contact": "sarah@university.edu",
+        "bio": "Ph.D. in Economics, specializing in microeconomics and labor economics.",
+        "courses": ["ECO101 - Principles of Economics", "ECO201 - Microeconomics"],
+        "profileImage": "path/to/sarah_lee.jpg"
     },
     {
+        "id": 10,
         "name": "David White",
         "designation": "Professor",
         "subject": "Philosophy",
         "officeHours": "9 AM - 11 AM",
-        "contact": "david@university.edu"
+        "contact": "david@university.edu",
+        "bio": "Ph.D. in Philosophy, focusing on ethics and political philosophy.",
+        "courses": ["PHIL101 - Introduction to Philosophy", "PHIL201 - Ethics"],
+        "profileImage": "path/to/david_white.jpg"
     }
 ]

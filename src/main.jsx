@@ -10,6 +10,7 @@ import Home from './Pages/Home';
 import StudentDashboard from './Pages/StudentDashboard';
 import FacultyManagement from './Pages/FacultyManagement';
 import CourseRegistration from './Pages/CourseRegistration';
+import FacultyProfile from './Pages/FacultyProfile';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,11 @@ const router = createBrowserRouter([
         path: '/enroll',
         element: <CourseRegistration></CourseRegistration>,
         loader:()=>fetch('/courses.json')
+      },
+      {
+        path: '/faculty/:id',
+        element: <FacultyProfile></FacultyProfile>,
+        loader:()=>fetch('/facultyList.json')
       },
 
     ]
