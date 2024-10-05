@@ -3,16 +3,22 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import { useForm } from "react-hook-form";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import UseAuth from "../Hooks/UseAuth";
 
 const Register = () => {
 
-    const {createUser}= UseAuth()
+    const {createUser,user,loading}= UseAuth()
+
     const location=useLocation()
     const navigate=useNavigate()
 
+useEffect(()=>{
+            if(user){
+                navigate('/')
+            }
+        },[navigate,user])
 
     const {
         register,
@@ -52,7 +58,7 @@ const Register = () => {
             })
 
     }
-
+    if(user || loading) return
     return (
         <div>
             

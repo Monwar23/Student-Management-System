@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useLocation, useNavigate } from "react-router-dom";
 import UseAuth from "../Hooks/UseAuth";
 import { useForm } from "react-hook-form";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
@@ -13,9 +13,16 @@ import SocialLogin from "./SocialLogin";
 const Login = () => {
 
 
-    const { signIn } = UseAuth()
+    const { signIn,user,loading } = UseAuth()
+
     const location=useLocation()
     const navigate=useNavigate()
+
+    useEffect(()=>{
+        if(user){
+            navigate('/')
+        }
+    },[navigate,user])
 
     const { register, handleSubmit, formState: { errors } } = useForm();
 
@@ -41,7 +48,7 @@ const Login = () => {
             })
     }
 
-
+if(user || loading) return
     return (
         <div>
       
