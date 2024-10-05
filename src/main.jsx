@@ -14,6 +14,10 @@ import FacultyProfile from './Pages/FacultyProfile';
 import ErrorPage from './Pages/ErrorPage';
 import Contact from './Pages/Contact';
 import DetailEvent from './Pages/DetailEvent';
+import FirebaseProvider from './firebase/FirebaeProvide';
+import PrivateRoutes from './private/PrivateRoutes';
+import Login from './Pages/Login';
+import Register from './Pages/Register';
 
 const router = createBrowserRouter([
   {
@@ -38,7 +42,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/enroll',
-        element: <CourseRegistration></CourseRegistration>,
+        element: <PrivateRoutes><CourseRegistration></CourseRegistration></PrivateRoutes>,
         loader:()=>fetch('/courses.json')
       },
       {
@@ -49,6 +53,14 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact></Contact>
+      },
+      {
+        path: '/login',
+        element: <Login></Login>
+      },
+      {
+        path: '/register',
+        element: <Register></Register>
       },
       {
         path: '/events/:id',
@@ -62,8 +74,10 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div className='max-w-screen-xl mx-auto'>
+   <FirebaseProvider>
+   <div className='max-w-screen-xl mx-auto'>
     <RouterProvider router={router} />
     </div>
+   </FirebaseProvider>
   </StrictMode>,
 )

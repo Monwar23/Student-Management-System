@@ -27,23 +27,9 @@ const CourseRegistration = () => {
 
                 {!submitted ? (
                     <form onSubmit={handleSubmit} className="space-y-6">
-                        <div>
-                            <label className="block text-[#07B0CE] font-semibold">Name</label>
-                            <input
-                                type="text"
-                                ref={nameRef}
-                                className="mt-2 block w-full px-4 py-2 bg-transparent border border-[#07B0CE] text-white rounded-lg" required
-                            />
-                        </div>
+                       
 
-                        <div>
-                            <label className="block text-[#07B0CE] font-semibold">Email</label>
-                            <input
-                                type="email"
-                                ref={emailRef}
-                                className="mt-2 block w-full px-4 py-2 bg-transparent border border-[#07B0CE] text-white rounded-lg" required
-                            />
-                        </div>
+                       
 
                         <div>
                             <label className="block text-[#07B0CE] font-semibold">Course</label>
