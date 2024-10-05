@@ -13,6 +13,9 @@ const Navbar = () => {
         <li><NavLink className={({ isActive }) =>
             isActive ? 'text-[#07B0CE] border-b-2 border-[#07B0CE] font-semibold mr-2' : 'font-semibold hover:text-[#07B0CE] hover:border-b-2 border-[#07B0CE] text-white'
         } to="/faculty">Faculty Overview</NavLink></li>
+        <li><NavLink className={({ isActive }) =>
+            isActive ? 'text-[#07B0CE] border-b-2 border-[#07B0CE] font-semibold mr-2' : 'font-semibold hover:text-[#07B0CE] hover:border-b-2 border-[#07B0CE] text-white'
+        } to="/contact">Contact Us</NavLink></li>
     </>;
 
     return (

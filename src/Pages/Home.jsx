@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
+import Marquee from "react-fast-marquee";
 import { Link, useLoaderData } from "react-router-dom";
 
 const Home = () => {
-    const events = useLoaderData(); // Assuming events data is fetched using `useLoaderData`
+    const events = useLoaderData();
 
-    // Framer Motion variant for cards with additional animations
     const cardVariants = {
         hidden: { opacity: 0, scale: 0.8, rotate: -10, y: 50 },
         visible: {
@@ -29,7 +29,6 @@ const Home = () => {
 
     return (
         <div>
-            {/* Welcome Section */}
             <section className="text-white text-center pt-20 pb-5">
                 <h1 className="text-4xl font-bold">Welcome to <span className="text-[#07B0CE]">OceanCapp</span> University</h1>
                 <p className="mt-4 text-lg">Manage your courses, faculty, and more all in one place</p>
@@ -72,7 +71,6 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* News and Events Section with Framer Motion */}
             <section className="py-16">
                 <div className="container mx-auto text-center text-white">
                     <h2 className="text-3xl font-bold mb-8">News and Events</h2>
@@ -106,22 +104,70 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Testimonials Section */}
             <section className="py-16">
-                <div className="container mx-auto text-center text-white">
-                    <h2 className="text-3xl font-bold mb-8">What Our Students Say</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div className="border border-[#07B0CE] p-8 shadow-lg rounded-lg">
-                            <p>"The University has completely transformed how I manage my academic life. Its user-friendly design helps me stay organized with classes, assignments, and grades all in one place."</p>
-                            <h3 className="mt-4 text-xl font-semibold text-[#07B0CE]">- Sarah Ali, Computer Science Student</h3>
-                        </div>
-                        <div className="border border-[#07B0CE] p-8 shadow-lg rounded-lg">
-                            <p>"The updated dashboard is a lifesaver! It’s intuitive and allows me to efficiently track my academic progress, deadlines, and attendance without any hassle."</p>
-                            <h3 className="mt-4 text-xl text-[#07B0CE] font-semibold">- James Anderson, Business Administration Student</h3>
-                        </div>
+    <div className="container mx-auto text-center text-white">
+        <h2 className="text-3xl font-bold mb-8">What Our Students Say</h2>
+        <Marquee pauseOnHover={true} speed={50}>
+            <div className="flex">
+                <div className="border border-[#07B0CE] p-8 shadow-lg rounded-lg mr-8 w-80">
+                    <p>"The University has completely transformed how I manage my academic life. Its user-friendly design helps me stay organized with classes, assignments, and grades all in one place."</p>
+                    <div className="flex justify-center mt-4">
+                        <img src="https://i.ibb.co/YZQNFjG/Whats-App-Image-2024-10-04-at-22-39-27-e359895b.jpg" alt="" className="rounded-full h-32 w-32" />
                     </div>
+                    <h3 className="mt-4 text-xl font-semibold text-[#07B0CE]">- Sarah Ali, Computer Science Student</h3>
                 </div>
-            </section>
+                <div className="border border-[#07B0CE] p-8 shadow-lg rounded-lg mr-8 w-80">
+                    <p>"The updated dashboard is a lifesaver! It’s intuitive and allows me to efficiently track my academic progress, deadlines, and attendance without any hassle."</p>
+                    <div className="flex justify-center mt-4">
+                        <img src="https://i.ibb.co/m8Bjk74/pexels-italo-melo-881954-2379004.jpg" alt="" className="rounded-full h-32 w-32" />
+                    </div>
+                    <h3 className="mt-4 text-xl text-[#07B0CE] font-semibold">- James Anderson, Business Administration Student</h3>
+                </div>
+
+                <div className="border border-[#07B0CE] p-8 shadow-lg rounded-lg mr-8 w-80">
+                    <p>"The study resources available through the platform have significantly improved my learning experience. I can easily access all materials needed for my courses."</p>
+                    <div className="flex justify-center mt-4">
+                        <img src="https://i.ibb.co.com/BCBqm14/Whats-App-Image-2024-10-04-at-22-39-26-116b6f9a.jpg" alt="" className="rounded-full h-32 w-32" />
+                    </div>
+                    <h3 className="mt-4 text-xl font-semibold text-[#07B0CE]">- Emily Clark, Psychology Major</h3>
+                </div>
+
+                <div className="border border-[#07B0CE] p-8 shadow-lg rounded-lg mr-8 w-80">
+                    <p>"The ability to communicate with my professors and peers directly through the platform has made collaboration and feedback much easier."</p>
+                    <div className="flex justify-center mt-4">
+                        <img src="https://i.ibb.co.com/P6jRCVR/Whats-App-Image-2024-10-04-at-22-39-30-103912f2.jpg" alt="" className="rounded-full h-32 w-32" />
+                    </div>
+                    <h3 className="mt-4 text-xl font-semibold text-[#07B0CE]">- Michael Brown, Engineering Student</h3>
+                </div>
+
+                <div className="border border-[#07B0CE] p-8 shadow-lg rounded-lg mr-8 w-80">
+                    <p>"I love how I can customize my dashboard to fit my personal needs and study habits. It makes a big difference in my academic journey."</p>
+                    <div className="flex justify-center mt-4">
+                        <img src="https://i.ibb.co.com/sbHX87w/Whats-App-Image-2024-10-04-at-22-39-32-fb73657b.jpg" alt="" className="rounded-full h-32 w-32" />
+                    </div>
+                    <h3 className="mt-4 text-xl font-semibold text-[#07B0CE]">- Jessica Taylor, History Student</h3>
+                </div>
+
+                <div className="border border-[#07B0CE] p-8 shadow-lg rounded-lg mr-8 w-80">
+                    <p>"The platform's mobile app is fantastic! I can keep up with my coursework and deadlines on the go, which has been a game changer for me."</p>
+                    <div className="flex justify-center mt-4">
+                        <img src="https://i.ibb.co.com/Ks6LPWq/Whats-App-Image-2024-10-04-at-22-39-33-6fa97259.jpg" alt="" className="rounded-full h-32 w-32" />
+                    </div>
+                    <h3 className="mt-4 text-xl font-semibold text-[#07B0CE]">- David Lee, Marketing Student</h3>
+                </div>
+
+                <div className="border border-[#07B0CE] p-8 shadow-lg rounded-lg mr-8 w-80">
+                    <p>"The feedback I receive from my assignments is prompt and constructive, helping me improve continuously in my studies."</p>
+                    <div className="flex justify-center mt-4">
+                        <img src="https://i.ibb.co.com/0GtkGV6/pexels-madvortex-16887219.jpg" alt="" className="rounded-full h-32 w-32" />
+                    </div>
+                    <h3 className="mt-4 text-xl font-semibold text-[#07B0CE]">- Laura Kim, Biology Major</h3>
+                </div>
+            </div>
+        </Marquee>
+    </div>
+</section>
+
         </div>
     );
 };
