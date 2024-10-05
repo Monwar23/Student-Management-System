@@ -13,6 +13,7 @@ import CourseRegistration from './Pages/CourseRegistration';
 import FacultyProfile from './Pages/FacultyProfile';
 import ErrorPage from './Pages/ErrorPage';
 import Contact from './Pages/Contact';
+import DetailEvent from './Pages/DetailEvent';
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,8 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home></Home>
+        element: <Home></Home>,
+        loader:()=>fetch('/event.json')
       },
       {
         path: '/student',
@@ -47,6 +49,11 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact></Contact>
+      },
+      {
+        path: '/events/:id',
+        element: <DetailEvent></DetailEvent>,
+        loader:()=>fetch('/event.json')
       },
 
     ]
