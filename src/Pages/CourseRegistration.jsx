@@ -1,11 +1,20 @@
 import { useRef, useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import UseAuth from '../Hooks/UseAuth';
 
 const CourseRegistration = () => {
     const [submitted, setSubmitted] = useState(false);
-    const courses = useLoaderData();
+    const {user}=UseAuth()
+    const courses = [
+        "Artificial Intelligence",
+        "Quantum Computing",
+        "Computer Science",
+        "Data Structures",
+        "Machine Learning",
+        "Cloud Computing",
+        "Cybersecurity",
+        "Blockchain",
+    ];
 
-    const nameRef = useRef(null);
     const emailRef = useRef(null);
     const courseRef = useRef(null);
 
@@ -13,7 +22,6 @@ const CourseRegistration = () => {
         e.preventDefault();
         setSubmitted(true);
 
-        nameRef.current.value = '';
         emailRef.current.value = '';
         courseRef.current.value = '';
     };
@@ -29,18 +37,28 @@ const CourseRegistration = () => {
                     <form onSubmit={handleSubmit} className="space-y-6">
                        
 
-                       
+                       <div>
+                            <label className="block text-[#07B0CE] font-semibold">Email</label>
+                            <input defaultValue={user.email} readOnly
+                                className="mt-2 block w-full px-4 py-2 bg-transparent border border-[#07B0CE] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#07B0CE] focus:border-transparent" required
+                            >
+                               
+                                
+                            </input>
+                        </div>
 
+                       
                         <div>
                             <label className="block text-[#07B0CE] font-semibold">Course</label>
                             <select
                                 ref={courseRef}
-                                className="mt-2 block w-full px-4 py-2 bg-transparent border border-[#07B0CE] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#07B0CE] focus:border-transparent" required
+                                className="mt-2 block w-full px-4 py-2 bg-transparent border border-[#07B0CE] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#07B0CE] focus:border-transparent" 
+                                required
                             >
                                 <option value="" className="text-gray-500">Select a course</option>
-                                {courses.map((course) => (
-                                    <option key={course} value={course.name} className="text-[#286570]">
-                                        {course.name}
+                                {courses.map((course, index) => (
+                                    <option key={index} value={course} className="text-[#286570]">
+                                        {course}
                                     </option>
                                 ))}
                             </select>

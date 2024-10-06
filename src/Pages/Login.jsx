@@ -62,7 +62,7 @@ if(user || loading) return
                 <input 
                     type="email" 
                     placeholder="Email" 
-                    className="mt-2 block w-full px-4 py-2 bg-transparent border border-[#07B0CE] text-white rounded-lg" 
+                    className="mt-2 block w-full px-4 py-2 bg-transparent border border-[#07B0CE] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#07B0CE] focus:border-transparent" 
                     {...register("email", { required: true })} 
                 />
                 {errors.email && <span className='text-red-500'>This field is required</span>}
@@ -74,7 +74,7 @@ if(user || loading) return
                     type={showPassword ? "text" : "password"} 
                     name="password" 
                     placeholder="Password" 
-                    className="mt-2 block w-full px-4 py-2 bg-transparent border border-[#07B0CE] text-white rounded-lg pr-10" 
+                    className="mt-2 block w-full px-4 py-2 bg-transparent border border-[#07B0CE] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#07B0CE] focus:border-transparent" 
                     {...register("password", { required: true })} 
                 />
                 <span 

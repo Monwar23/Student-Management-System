@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { useEffect, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import UseAuth from "../Hooks/UseAuth";
+import SocialLogin from "./SocialLogin";
 
 const Register = () => {
 
@@ -74,7 +75,7 @@ useEffect(()=>{
                     <input 
                         type="text" 
                         placeholder="Name" 
-                        className="mt-2 block w-full px-4 py-2 bg-transparent border border-[#07B0CE] text-white rounded-lg" 
+                        className="mt-2 block w-full px-4 py-2 bg-transparent border border-[#07B0CE] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#07B0CE] focus:border-transparent" 
                         {...register("Name", { required: true })} 
                     />
                     {errors.Name && <span className="text-red-500">This field is required</span>}
@@ -85,7 +86,7 @@ useEffect(()=>{
                     <input 
                         type="email" 
                         placeholder="Email" 
-                        className="mt-2 block w-full px-4 py-2 bg-transparent border border-[#07B0CE] text-white rounded-lg" 
+                        className="mt-2 block w-full px-4 py-2 bg-transparent border border-[#07B0CE] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#07B0CE] focus:border-transparent" 
                         {...register("email", { required: true })} 
                     />
                     {errors.email && <span className="text-red-500">This field is required</span>}
@@ -96,7 +97,7 @@ useEffect(()=>{
                     <input 
                         type={showPassword ? "text" : "password"} 
                         placeholder="Password" 
-                        className="mt-2 block w-full px-4 py-2 bg-transparent border border-[#07B0CE] text-white rounded-lg" 
+                        className="mt-2 block w-full px-4 py-2 bg-transparent border border-[#07B0CE] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#07B0CE] focus:border-transparent" 
                         {...register("password", { required: true })} 
                     />
                     <button 
@@ -121,6 +122,8 @@ useEffect(()=>{
             <p className="text-center text-white mt-6">
                 Already have an account? <Link to='/login' className="text-[#07B0CE] font-bold hover:underline">Login</Link>
             </p>
+            <p className="text-white border-b-2 mt-4 text-center pb-2">Register with</p>
+            <SocialLogin />
         </div>
         <ToastContainer />
     </div>
