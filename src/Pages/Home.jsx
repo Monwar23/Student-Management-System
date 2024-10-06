@@ -104,20 +104,22 @@ const Home = () => {
                 </div>
             </section>
 
+
+
             <section className="py-16">
     <div className="container mx-auto text-center text-white">
         <h2 className="text-3xl font-bold mb-8">What Our Students Say</h2>
         <Marquee pauseOnHover={true} speed={50}>
             <div className="flex">
                 <div className="border border-[#07B0CE] p-8 shadow-lg rounded-lg mr-8 w-80">
-                    <p>"The University has completely transformed how I manage my academic life. Its user-friendly design helps me stay organized with classes, assignments, and grades all in one place."</p>
+                    <p>"The university offers a truly enriching academic experience with dedicated professors and modern facilities."</p>
                     <div className="flex justify-center mt-4">
                         <img src="https://i.ibb.co/YZQNFjG/Whats-App-Image-2024-10-04-at-22-39-27-e359895b.jpg" alt="" className="rounded-full h-32 w-32" />
                     </div>
                     <h3 className="mt-4 text-xl font-semibold text-[#07B0CE]">- Sarah Ali, Computer Science Student</h3>
                 </div>
                 <div className="border border-[#07B0CE] p-8 shadow-lg rounded-lg mr-8 w-80">
-                    <p>"The updated dashboard is a lifesaver! It’s intuitive and allows me to efficiently track my academic progress, deadlines, and attendance without any hassle."</p>
+                    <p>"I’ve grown so much academically and personally thanks to the supportive environment at this university."</p>
                     <div className="flex justify-center mt-4">
                         <img src="https://i.ibb.co/m8Bjk74/pexels-italo-melo-881954-2379004.jpg" alt="" className="rounded-full h-32 w-32" />
                     </div>
@@ -125,7 +127,7 @@ const Home = () => {
                 </div>
 
                 <div className="border border-[#07B0CE] p-8 shadow-lg rounded-lg mr-8 w-80">
-                    <p>"The study resources available through the platform have significantly improved my learning experience. I can easily access all materials needed for my courses."</p>
+                    <p>"The faculty’s commitment to student success and the variety of resources available make this a great place to learn."</p>
                     <div className="flex justify-center mt-4">
                         <img src="https://i.ibb.co.com/BCBqm14/Whats-App-Image-2024-10-04-at-22-39-26-116b6f9a.jpg" alt="" className="rounded-full h-32 w-32" />
                     </div>
@@ -133,7 +135,7 @@ const Home = () => {
                 </div>
 
                 <div className="border border-[#07B0CE] p-8 shadow-lg rounded-lg mr-8 w-80">
-                    <p>"The ability to communicate with my professors and peers directly through the platform has made collaboration and feedback much easier."</p>
+                    <p>"The university’s curriculum is well-structured, and the professors are always willing to guide us through any challenges."</p>
                     <div className="flex justify-center mt-4">
                         <img src="https://i.ibb.co.com/P6jRCVR/Whats-App-Image-2024-10-04-at-22-39-30-103912f2.jpg" alt="" className="rounded-full h-32 w-32" />
                     </div>
@@ -141,7 +143,7 @@ const Home = () => {
                 </div>
 
                 <div className="border border-[#07B0CE] p-8 shadow-lg rounded-lg mr-8 w-80">
-                    <p>"I love how I can customize my dashboard to fit my personal needs and study habits. It makes a big difference in my academic journey."</p>
+                    <p>"The campus atmosphere is vibrant, and the opportunities for extracurricular activities have enhanced my overall experience."</p>
                     <div className="flex justify-center mt-4">
                         <img src="https://i.ibb.co.com/sbHX87w/Whats-App-Image-2024-10-04-at-22-39-32-fb73657b.jpg" alt="" className="rounded-full h-32 w-32" />
                     </div>
@@ -149,7 +151,7 @@ const Home = () => {
                 </div>
 
                 <div className="border border-[#07B0CE] p-8 shadow-lg rounded-lg mr-8 w-80">
-                    <p>"The platform's mobile app is fantastic! I can keep up with my coursework and deadlines on the go, which has been a game changer for me."</p>
+                    <p>"I’m impressed by the quality of education and the numerous support services that help students thrive here."</p>
                     <div className="flex justify-center mt-4">
                         <img src="https://i.ibb.co.com/Ks6LPWq/Whats-App-Image-2024-10-04-at-22-39-33-6fa97259.jpg" alt="" className="rounded-full h-32 w-32" />
                     </div>
@@ -157,7 +159,7 @@ const Home = () => {
                 </div>
 
                 <div className="border border-[#07B0CE] p-8 shadow-lg rounded-lg mr-8 w-80">
-                    <p>"The feedback I receive from my assignments is prompt and constructive, helping me improve continuously in my studies."</p>
+                    <p>"The collaborative spirit among students and the approachable faculty make this university an ideal place for academic growth."</p>
                     <div className="flex justify-center mt-4">
                         <img src="https://i.ibb.co.com/0GtkGV6/pexels-madvortex-16887219.jpg" alt="" className="rounded-full h-32 w-32" />
                     </div>
