@@ -1,122 +1,353 @@
 [
-  {
-      "name": "Web Development",
-      "grade": "A",
-      "professor": "John Doe",
-      "contact": "john@example.com",
-      "description": "Learn the fundamentals of web development, including HTML, CSS, JavaScript, and responsive design.",
-      "syllabus": "Week 1: HTML & CSS, Week 2: JavaScript Basics, Week 3: Responsive Design, Week 4: React",
-      "prerequisites": "Basic computer knowledge",
-      "credits": 4,
-      "schedule": "Monday & Wednesday, 10:00 AM - 12:00 PM",
-      "enrollmentDetails": "Enrollment open till Jan 15, 2025"
-  },
-  {
-      "name": "Data Structures",
-      "grade": "B+",
-      "professor": "Jane Smith",
-      "contact": "jane@example.com",
-      "description": "Introduction to data structures such as arrays, linked lists, stacks, queues, trees, and graphs.",
-      "syllabus": "Week 1: Arrays & Linked Lists, Week 2: Stacks & Queues, Week 3: Trees, Week 4: Graphs",
-      "prerequisites": "Basic programming knowledge in any language",
-      "credits": 3,
-      "schedule": "Tuesday & Thursday, 2:00 PM - 4:00 PM",
-      "enrollmentDetails": "Enrollment open till Jan 12, 2025"
-  },
-  {
-      "name": "Calculus I",
-      "grade": "A-",
-      "professor": "Jane Smith",
-      "contact": "jane@example.com",
-      "description": "Introduction to differential and integral calculus.",
-      "syllabus": "Week 1: Limits, Week 2: Derivatives, Week 3: Integrals, Week 4: Applications",
-      "prerequisites": "Pre-calculus",
-      "credits": 4,
-      "schedule": "Monday & Wednesday, 11:00 AM - 1:00 PM",
-      "enrollmentDetails": "Enrollment open till Jan 14, 2025"
-  },
-  {
-      "name": "Linear Algebra",
-      "grade": "B",
-      "professor": "John Doe",
-      "contact": "john@example.com",
-      "description": "Study of vector spaces, matrices, determinants, eigenvalues, and eigenvectors.",
-      "syllabus": "Week 1: Matrices, Week 2: Vector Spaces, Week 3: Eigenvalues, Week 4: Applications",
-      "prerequisites": "Calculus I",
-      "credits": 3,
-      "schedule": "Tuesday & Thursday, 9:00 AM - 11:00 AM",
-      "enrollmentDetails": "Enrollment open till Jan 13, 2025"
-  },
-  {
-      "name": "Organic Chemistry",
-      "grade": "B+",
-      "professor": "Robert Brown",
-      "contact": "robert@example.com",
-      "description": "Introduction to the structure, properties, and reactions of organic compounds.",
-      "syllabus": "Week 1: Hydrocarbons, Week 2: Functional Groups, Week 3: Stereochemistry, Week 4: Reactions",
-      "prerequisites": "General Chemistry",
-      "credits": 4,
-      "schedule": "Monday & Wednesday, 2:00 PM - 4:00 PM",
-      "enrollmentDetails": "Enrollment open till Jan 10, 2025"
-  },
-  {
-      "name": "Microeconomics",
-      "grade": "A",
-      "professor": "Michael Lee",
-      "contact": "michael@example.com",
-      "description": "Study of the behavior of individuals and firms in making decisions regarding the allocation of resources.",
-      "syllabus": "Week 1: Supply & Demand, Week 2: Consumer Behavior, Week 3: Production, Week 4: Market Structures",
-      "prerequisites": "Basic economics knowledge",
-      "credits": 4,
-      "schedule": "Tuesday & Thursday, 10:00 AM - 12:00 PM",
-      "enrollmentDetails": "Enrollment open till Jan 11, 2025"
-  },
-  {
-      "name": "World History",
-      "grade": "A-",
-      "professor": "Sarah Williams",
-      "contact": "sarah@example.com",
-      "description": "A comprehensive overview of world history from ancient times to the modern era.",
-      "syllabus": "Week 1: Ancient Civilizations, Week 2: Middle Ages, Week 3: Renaissance, Week 4: Modern History",
-      "prerequisites": "None",
-      "credits": 3,
-      "schedule": "Monday & Wednesday, 1:00 PM - 3:00 PM",
-      "enrollmentDetails": "Enrollment open till Jan 14, 2025"
-  },
-  {
-      "name": "Introduction to Sociology",
-      "grade": "B+",
-      "professor": "James Anderson",
-      "contact": "james@example.com",
-      "description": "Introduction to the study of society, social institutions, and social relationships.",
-      "syllabus": "Week 1: Sociological Theories, Week 2: Social Institutions, Week 3: Socialization, Week 4: Social Change",
-      "prerequisites": "None",
-      "credits": 3,
-      "schedule": "Tuesday & Thursday, 1:00 PM - 3:00 PM",
-      "enrollmentDetails": "Enrollment open till Jan 12, 2025"
-  },
-  {
-      "name": "Cognitive Psychology",
-      "grade": "A",
-      "professor": "Olivia Martinez",
-      "contact": "olivia@example.com",
-      "description": "Study of mental processes such as attention, memory, perception, and problem-solving.",
-      "syllabus": "Week 1: Attention, Week 2: Memory, Week 3: Perception, Week 4: Problem-solving",
-      "prerequisites": "Introduction to Psychology",
-      "credits": 3,
-      "schedule": "Monday & Wednesday, 3:00 PM - 5:00 PM",
-      "enrollmentDetails": "Enrollment open till Jan 13, 2025"
-  },
-  {
-      "name": "Quantum Mechanics",
-      "grade": "B+",
-      "professor": "Alice Johnson",
-      "contact": "alice@example.com",
-      "description": "Introduction to the principles and applications of quantum mechanics.",
-      "syllabus": "Week 1: Wave-Particle Duality, Week 2: Schrödinger Equation, Week 3: Quantum States, Week 4: Applications",
-      "prerequisites": "General Physics",
-      "credits": 4,
-      "schedule": "Tuesday & Thursday, 11:00 AM - 1:00 PM",
-      "enrollmentDetails": "Enrollment open till Jan 10, 2025"
-  }
-]
+    {
+      "student": {
+        "name": "Alice Johnson",
+        "grade": "A",
+        "courses": [
+          {
+            "courseId": "CSE101",
+            "courseName": "Introduction to Computer Science",
+            "professor": {
+              "name": "Dr. Sarah Clark",
+              "email": "sarah.clark@university.edu"
+            },
+            "grade": "A",
+            "info": "Basics of computer science, programming, and algorithms."
+          },
+          {
+            "courseId": "CSE102",
+            "courseName": "Data Structures",
+            "professor": {
+              "name": "Dr. Michael Johnson",
+              "email": "michael.johnson@university.edu"
+            },
+            "grade": "B+",
+            "info": "In-depth course on data structures like arrays, linked lists, and trees."
+          }
+        ],
+        "upcomingEvents": [
+          {
+            "eventId": "E101",
+            "eventName": "Mid-Term Exams",
+            "date": "2024-10-15"
+          }
+        ]
+      }
+    },
+    {
+      "student": {
+        "name": "Bob Smith",
+        "grade": "A-",
+        "courses": [
+          {
+            "courseId": "CSE201",
+            "courseName": "Operating Systems",
+            "professor": {
+              "name": "Dr. Alan Grant",
+              "email": "alan.grant@university.edu"
+            },
+            "grade": "A-",
+            "info": "Introduction to operating systems and resource management."
+          },
+          {
+            "courseId": "CSE202",
+            "courseName": "Algorithms",
+            "professor": {
+              "name": "Dr. Emily White",
+              "email": "emily.white@university.edu"
+            },
+            "grade": "A",
+            "info": "Design and analysis of algorithms for problem-solving."
+          }
+        ],
+        "upcomingEvents": [
+          {
+            "eventId": "E102",
+            "eventName": "Hackathon",
+            "date": "2024-11-01"
+          }
+        ]
+      }
+    },
+    {
+      "student": {
+        "name": "Charlie Brown",
+        "grade": "A+",
+        "courses": [
+          {
+            "courseId": "CSE301",
+            "courseName": "Database Management",
+            "professor": {
+              "name": "Dr. Robert King",
+              "email": "robert.king@university.edu"
+            },
+            "grade": "B",
+            "info": "Fundamentals of database systems and SQL."
+          },
+          {
+            "courseId": "CSE302",
+            "courseName": "Software Engineering",
+            "professor": {
+              "name": "Dr. Mary Queen",
+              "email": "mary.queen@university.edu"
+            },
+            "grade": "A-",
+            "info": "Software development processes and project management."
+          }
+        ],
+        "upcomingEvents": [
+          {
+            "eventId": "E103",
+            "eventName": "Final Project Review",
+            "date": "2024-12-20"
+          }
+        ]
+      }
+    },
+    {
+      "student": {
+        "name": "Daisy Adams",
+        "grade": "B+",
+        "courses": [
+          {
+            "courseId": "CSE401",
+            "courseName": "Artificial Intelligence",
+            "professor": {
+              "name": "Dr. David Banner",
+              "email": "david.banner@university.edu"
+            },
+            "grade": "A+",
+            "info": "Introduction to AI concepts like machine learning and neural networks."
+          },
+          {
+            "courseId": "CSE402",
+            "courseName": "Cybersecurity",
+            "professor": {
+              "name": "Dr. Anna Stark",
+              "email": "anna.stark@university.edu"
+            },
+            "grade": "B+",
+            "info": "Security principles and protection against cyber threats."
+          }
+        ],
+        "upcomingEvents": [
+          {
+            "eventId": "E104",
+            "eventName": "Security Workshop",
+            "date": "2024-10-28"
+          }
+        ]
+      }
+    },
+    {
+      "student": {
+        "name": "Evan Davis",
+        "grade": "A",
+        "courses": [
+          {
+            "courseId": "CSE501",
+            "courseName": "Computer Networks",
+            "professor": {
+              "name": "Dr. Mark Wahlberg",
+              "email": "mark.wahlberg@university.edu"
+            },
+            "grade": "B",
+            "info": "Study of network protocols and distributed systems."
+          },
+          {
+            "courseId": "CSE502",
+            "courseName": "Mobile App Development",
+            "professor": {
+              "name": "Dr. Tony Stark",
+              "email": "tony.stark@university.edu"
+            },
+            "grade": "A",
+            "info": "Developing applications for mobile platforms like Android and iOS."
+          }
+        ],
+        "upcomingEvents": [
+          {
+            "eventId": "E105",
+            "eventName": "App Demo Day",
+            "date": "2024-11-15"
+          }
+        ]
+      }
+    },
+    {
+      "student": {
+        "name": "Fiona Garcia",
+        "grade": "A-",
+        "courses": [
+          {
+            "courseId": "CSE601",
+            "courseName": "Machine Learning",
+            "professor": {
+              "name": "Dr. Ivy Watson",
+              "email": "ivy.watson@university.edu"
+            },
+            "grade": "A-",
+            "info": "Supervised, unsupervised learning and data analysis."
+          },
+          {
+            "courseId": "CSE602",
+            "courseName": "Big Data",
+            "professor": {
+              "name": "Dr. Henry Ford",
+              "email": "henry.ford@university.edu"
+            },
+            "grade": "B+",
+            "info": "Handling and processing large datasets using modern tools."
+          }
+        ],
+        "upcomingEvents": [
+          {
+            "eventId": "E106",
+            "eventName": "Data Analytics Conference",
+            "date": "2024-12-10"
+          }
+        ]
+      }
+    },
+    {
+      "student": {
+        "name": "George Wilson",
+        "grade": "A+",
+        "courses": [
+          {
+            "courseId": "CSE701",
+            "courseName": "Cloud Computing",
+            "professor": {
+              "name": "Dr. Bruce Banner",
+              "email": "bruce.banner@university.edu"
+            },
+            "grade": "A+",
+            "info": "Cloud platforms, services, and infrastructure management."
+          },
+          {
+            "courseId": "CSE702",
+            "courseName": "Blockchain",
+            "professor": {
+              "name": "Dr. Diana Prince",
+              "email": "diana.prince@university.edu"
+            },
+            "grade": "B",
+            "info": "Fundamentals of blockchain technology and cryptocurrencies."
+          }
+        ],
+        "upcomingEvents": [
+          {
+            "eventId": "E107",
+            "eventName": "Blockchain Seminar",
+            "date": "2024-11-30"
+          }
+        ]
+      }
+    },
+    {
+      "student": {
+        "name": "Hannah Martinez",
+        "grade": "B",
+        "courses": [
+          {
+            "courseId": "CSE801",
+            "courseName": "Game Development",
+            "professor": {
+              "name": "Dr. Laura Croft",
+              "email": "laura.croft@university.edu"
+            },
+            "grade": "A",
+            "info": "Developing 2D and 3D games using modern game engines."
+          },
+          {
+            "courseId": "CSE802",
+            "courseName": "Graphics Programming",
+            "professor": {
+              "name": "Dr. Steve Rogers",
+              "email": "steve.rogers@university.edu"
+            },
+            "grade": "B+",
+            "info": "Rendering techniques and visual effects for interactive applications."
+          }
+        ],
+        "upcomingEvents": [
+          {
+            "eventId": "E108",
+            "eventName": "Game Jam",
+            "date": "2024-12-05"
+          }
+        ]
+      }
+    },
+    {
+      "student": {
+        "name": "Isabella Lee",
+        "grade": "A",
+        "courses": [
+          {
+            "courseId": "CSE901",
+            "courseName": "Robotics",
+            "professor": {
+              "name": "Dr. Rachael Adams",
+              "email": "rachael.adams@university.edu"
+            },
+            "grade": "A-",
+            "info": "Designing, programming, and building robotic systems."
+          },
+          {
+            "courseId": "CSE902",
+            "courseName": "Computer Vision",
+            "professor": {
+              "name": "Dr. Peter Parker",
+              "email": "peter.parker@university.edu"
+            },
+            "grade": "A",
+            "info": "Developing algorithms to interpret and process visual data."
+          }
+        ],
+        "upcomingEvents": [
+          {
+            "eventId": "E109",
+            "eventName": "Robotics Expo",
+            "date": "2024-10-20"
+          }
+        ]
+      }
+    },
+    {
+      "student": {
+        "name": "Jack Anderson",
+        "grade": "A-",
+        "courses": [
+          {
+            "courseId": "CSE1001",
+            "courseName": "Quantum Computing",
+            "professor": {
+              "name": "Dr. Jane Foster",
+              "email": "jane.foster@university.edu"
+            },
+            "grade": "B+",
+            "info": "Fundamentals of quantum theory and quantum computation."
+          },
+          {
+            "courseId": "CSE1002",
+            "courseName": "Natural Language Processing",
+            "professor": {
+              "name": "Dr. Natasha Romanoff",
+              "email": "natasha.romanoff@university.edu"
+            },
+            "grade": "A",
+            "info": "Techniques for processing and analyzing human language data."
+          }
+        ],
+        "upcomingEvents": [
+          {
+            "eventId": "E110",
+            "eventName": "Quantum Computing Workshop",
+            "date": "2024-11-25"
+          }
+        ]
+      }
+    }
+  ]
+  
