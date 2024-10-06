@@ -34,7 +34,7 @@ const Home = () => {
                 <p className="mt-4 text-lg">Manage your courses, faculty, and more all in one place</p>
 
                 <div className="mt-8">
-                    <div className="flex justify-center space-x-10">
+                    <div className="grid grid-cols-2 md:grid-cols-4">
                         <div>
                             <h2 className="text-3xl font-bold">
                                 <CountUp start={0} end={8} duration={5} />
